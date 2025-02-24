@@ -2,8 +2,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 const app = express();
-
-// uses of middleware
+// cors policy for client
 const allowedOrigins = ["http://localhost:3000"];
 app.use(cors({
   origin: function (origin, callback) {
