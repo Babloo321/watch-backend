@@ -38,12 +38,13 @@ app.use("/api/v1/tweets",tweetRouter);
 // import videoRouter
 import videoRouter from './routes/video.routes.js';
 app.use("/api/v1/videos",videoRouter);
+export default app;
 
-
+/*
 // import commentRouter
 import commentRouter from './routes/comment.routes.js';
 app.use("/api/v1/comments",commentRouter);
-export default app;
+
 
 // import playlistRouter
 import playlistRouter from './routes/playlist.routes.js';
@@ -65,3 +66,5 @@ app.use("/api/v1/dashboard",dashboardRouter);
 // import shortAndTrandingRouter
 import shortsAndTrandingRouter from "./routes/home.routes.js";
 app.use("/api/v1/video",shortsAndTrandingRouter);
+
+*/
