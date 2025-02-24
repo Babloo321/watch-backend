@@ -22,6 +22,9 @@ app.use(express.urlencoded({limit:"16kb",extended:true}));  // when data comes t
 app.use(express.static("public"));    // to store static data use a seperate folder to store data folder name is anything
 app.use(cookieParser());    // to store data in cookies of user data to retrive user data and stored in cookies it coulde be working with server only
 
+app.get("/", (req, res) => {
+  res.send("Backend is running on Vercel!");
+});
 
 // import router
 import userRouter from "./routes/user.routes.js";
