@@ -3,7 +3,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 const app = express();
 // cors policy for client
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["https://watch-client-pi.vercel.app"];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
