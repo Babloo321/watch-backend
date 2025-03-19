@@ -2,7 +2,7 @@ import mongoose, { isValidObjectId } from "mongoose";
 import ApiResponse from "../utils/ApiResponse.js";
 import asyncHandler from "../utils/asyncHandler.js";
 import Razorpay from "razorpay";
-import ApiError from "../utils/apiError.js";
+import ApiError from "../utils/ApiError.js";
 import crypto from 'crypto';
 
 const razorpayInstance = new Razorpay({
